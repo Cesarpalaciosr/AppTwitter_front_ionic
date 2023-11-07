@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'profile',
     loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'twitster',
+    loadChildren: () => import('./pages/twitster/twitster.module').then( m => m.TwitsterPageModule)
   }
 ];
 @NgModule({

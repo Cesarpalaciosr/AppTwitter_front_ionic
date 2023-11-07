@@ -1,13 +1,28 @@
-*{
-    display: block;
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
 }
-span{
-    color: aqua;
-    padding-left: 20px;
+.tittle_container{
+    width: 45%;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
-ion-icon{
+.logo_container{
+    width: 55%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+}
+.logo{
+    margin-top: 15px;
+    width: 25px;
+    height: 25px;
+    color: aqua;
 }
