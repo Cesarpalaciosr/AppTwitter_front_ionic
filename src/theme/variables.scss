@@ -3,6 +3,15 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /**Custom colors**/
+  --ion-color-azultwitter: #24a5f3;
+	--ion-color-azultwitter-rgb: 36,165,243;
+	--ion-color-azultwitter-contrast: #000000;
+	--ion-color-azultwitter-contrast-rgb: 0,0,0;
+	--ion-color-azultwitter-shade: #2091d6;
+	--ion-color-azultwitter-tint: #3aaef4;
+
+
   /** primary **/
   --ion-color-primary: #3880FF;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -234,7 +243,14 @@
     --ion-card-background: #1e1e1e;
   }
 }
-
+.ion-color-azultwitter {
+	--ion-color-base: var(--ion-color-azultwitter);
+	--ion-color-base-rgb: var(--ion-color-azultwitter-rgb);
+	--ion-color-contrast: var(--ion-color-azultwitter-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-azultwitter-contrast-rgb);
+	--ion-color-shade: var(--ion-color-azultwitter-shade);
+	--ion-color-tint: var(--ion-color-azultwitter-tint);
+}
 html {
   /* 
    * For more information on dynamic font scaling, visit the documentation:
