@@ -1,3 +1,37 @@
+<!--fer-->
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Twister</ion-card-title>
+      <ion-card-subtitle>Login</ion-card-subtitle>
+    </ion-card-header>
+  
+  <ion-card-content>
+    <div><ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input [(ngModel)]="username" placeholder="Ingresar nombre de usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input (keyup.enter)="login()" [(ngModel)]="pass" type="password" placeholder="Ingresar contraseña"></ion-input>
+    </ion-item>
+  </div>
+    
+    <ion-grid>
+      <ion-col size="2" offset="4"> <ion-button (click)="login()" expand="block" color="success" fill="outline">Ingresar</ion-button></ion-col>
+      
+      <ion-col size="2" offset="4"> <ion-button expand="block" color="tertiary" fill="outline" [routerLink]="['/register']">Registrarse</ion-button></ion-col>
+    </ion-grid>
+    
+    </ion-card-content>
+  </ion-card>
+  
+  
+  
+  </ion-content>
+
+<!--end fer-->
+<!--
 <h1>hola</h1>
 <ion-header>
   <ion-toolbar color="primary">
@@ -27,13 +61,13 @@
   <ion-button type="submit" size='medium' color='secondary'>Login<ion-icon name='log-in'></ion-icon></ion-button>
   <ion-button size='medium' color='primary' >Go Here To Create An Account</ion-button>
 </ion-content>
-
-
-
+-->
 
 <!--ejemplo-->
-<!--<ion-header>
-  <ion-toolbar color="primary">
+<!--
+
+  <ion-header>
+    <ion-toolbar color="primary">
     <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -58,9 +92,9 @@
   </form>
 
   <ion-button type="submit" size='medium' color='secondary' (click)='loginUser()'>Login<ion-icon name='log-in'></ion-icon></ion-button>
-  <ion-button size='medium' color='primary' (click)="goToRegister()">Go Here To Create An Account</ion-button>
-</ion-content>-->
-
+  <ion-button size='medium' color='primary' >Go Here To Create An Account</ion-button>
+</ion-content>
+-->
 
 <!--archivo por defecto-->
 <!--<ion-header [translucent]="true">
