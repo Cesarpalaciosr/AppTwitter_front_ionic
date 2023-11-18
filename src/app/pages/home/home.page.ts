@@ -9,6 +9,7 @@ import { TwisterBoxComponent } from 'src/app/components/twister-box/twister-box.
 })
 export class HomePage implements OnInit {
   readonly HEADER_TITLE = 'Home';
+  
   constructor(private router: Router) {}
   // console.log(simpleString);
   
