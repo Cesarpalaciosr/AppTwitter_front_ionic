@@ -1,12 +1,11 @@
 <ion-content>
-  
-  <ion-textarea label="Twitstear" labelPlacement="floating" [counter]="true" placeholder="Que esta pasando" rows="5"  maxlength = "140"></ion-textarea>
+  <ion-textarea (ionInput)="handleChange($event)" name="tweet" label="Twitstear" labelPlacement="floating" [counter]="true" placeholder="Que esta pasando" rows="5"  maxlength = "140"></ion-textarea>
   <div class="container_button">
     <div>
       <ion-button fill="clear">
         <ion-icon slot="icon-only" name="image-outline"></ion-icon>
         </ion-button>
-        <ion-button shape="round" color="azultwitter">
+        <ion-button shape="round" (click)="postTweet()" color="azultwitter">
           <ion-icon slot="end" name="pencil-outline"></ion-icon>
             <ion-text>
               <span class="post-text">Postear</span>

@@ -8,6 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class ProfilePage implements OnInit {
   readonly HEADER_TITLE = 'Profile';
   constructor() {}
-
+    status=true;
   ngOnInit() {}
 }
